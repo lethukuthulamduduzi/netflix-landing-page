@@ -1,0 +1,430 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,800&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+/* 
+font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+ */
+
+ /* Universal Styles */
+:root{
+    --primary-color: #E50914;
+    --primary-font: 'Roboto', san-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--primary-font);
+    color: white;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    width: 100%;
+}
+.container h2{
+    font-size: 4rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+.container p{
+    font-size: 2rem;
+    line-height: 40px;
+    font-weight: 400;
+}
+.wrapper{
+    max-width: 100%;
+}
+
+/* Hero Wrapper */
+.hero-wrapper{
+    background: linear-gradient(rgb(0, 0, 0, 0.6), rgb(0, 0, 0, 0.6)), url("https://assets.nflxext.com/ffe/siteui/vlv3/ab180a27-b661-44d7-a6d9-940cb32f2f4a/8735d3f0-706d-4ff5-9c4d-6101a56d6d17/ZA-en-20231009-popsignuptwoweeks-perspective_alpha_website_medium.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+    /* Nav Bar */
+nav{
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+    margin: 0 50px;
+}
+.logo img{
+    height: 170px;
+    width: 190px;
+}
+.sign-in a{
+    padding: 8px 15px;
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.sign-in a:hover{
+    background-color: #cf0e18;
+    transition: 400ms;
+}
+
+    /* Hero Section */
+.hero-section{
+    height: calc(100vh - 100px);
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 100px;
+    text-align: center;
+}
+.hero-section h1{
+    font-size: 4rem;
+    font-weight: 900;
+    margin-bottom: 30px;
+}
+.hero-section h3{
+    font-size: 2.2rem;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.hero-section p{
+    font-size: 1.7rem;
+    margin-bottom: 20px;
+}
+.form-area{
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+}
+.form-area input[type="text"]{
+    height: 70px;
+    width: 450px;
+    background-color: rgba(0, 0, 0, 0.568);
+    color: white;
+    border: 2px solid #504f4f;
+    border-radius: 5px;
+    padding-left: 20px;
+    font-size: 20px;
+    margin-right: 10px;
+}
+.form-area button{
+    height: 70px;
+    width: 200px;
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    border: none;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+.form-area button:hover{
+    background-color: #cf0e18;
+    transition: 400ms;
+}
+
+/* TV Information */
+.divider{
+    height: 10px;
+    width: 100%;
+    background-color: #232323;
+}
+.tv-info{
+    height: 80vh;
+}
+
+.left-content{
+    width: 50%;
+    padding-left: 200px;
+}
+
+.right-content{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right-content video{
+    position: absolute;
+}
+.right-content img{
+    z-index: 1;
+}
+
+/* Download Information */
+.left-download-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    padding: 0 0 0 300px;
+}
+.film-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 378px;
+    height: 130px;
+    border: 2.5px solid #504f4f;
+    border-radius: 10px;
+    position: relative;
+    top: -150px;
+    background-color: black;
+}
+.film-img img{
+    width: 77px;
+    height: 100px;
+}
+.film-text h3{
+    font-size: 1.5rem;
+}
+.film-text p{
+    font-size: 1.2rem;
+    color: #0071eb;
+    margin-top: 5px;
+}
+.download-icon img{
+    height: 40px;
+    width: 40px;
+}
+.right-download-info{
+    width: 50%;
+    padding-right: 250px;
+}
+
+/* Kids Content */
+.kids-content{
+    padding: 100px 0;
+}
+.left-kids-content{
+    width: 50%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.right-kids-content{
+    width: 50%;
+    padding-right: 250px;
+}
+
+/* Footer */
+.footer{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding: 100px 200px;
+    
+}
+.footer p{
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #969494;
+    margin-bottom: 30px;
+}
+.row{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+.column a{
+    color: #969494;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+.translator{
+    margin-bottom: 30px;
+    height: 50px;
+    width: 150px;
+    border: 2px solid #969494;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.translator select{
+    width: 80px;
+    height: 35px;
+    color: #969494;
+    background-color: transparent;
+    font-size: 1rem;
+    border: none;
+}
+.translator select:active {
+    background-color: transparent;
+    color: #969494;
+}
+
+
+/* ----------------------Tablet Responsiveness------------------- */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    nav{
+        padding: 0;
+        margin: 0 20px;
+    }
+
+    .hero-section{
+        text-align: center;
+    }
+    .hero-section h1{
+        font-size: 3.5rem;
+    }
+
+    .container{
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .left-content{
+        width: 100%;
+        padding: 50px 40px;
+        text-align: center;
+    }
+    .left-content h2{
+        font-size: 3rem;
+    }
+    .right-content{
+        width: 100%;
+    }
+
+    .download-info{
+        flex-direction: column-reverse;
+    }
+    .left-download-info{
+        width: 100%;
+        padding: 50px 40px;
+        margin-top: -30px;
+    }
+    .right-download-info{
+        width: 100%;
+        padding: 50px 40px;
+        text-align: center;
+    }
+    .right-download-info h2{
+        font-size: 3rem;
+    }
+
+    .kids-content{
+        flex-direction: column-reverse;
+    }
+    .left-kids-content{
+        padding: 50px 40px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .right-kids-content{
+        padding: 50px 40px;
+        text-align: center;
+        width: 100%;
+    }
+    .right-kids-content h2{
+        font-size: 3rem;
+    }
+
+    .footer{
+        padding: 50px 40px;
+    }
+}
+/* ----------------------Tablet Responsiveness------------------- */
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 768px){
+    nav{
+        padding: 0;
+        margin: 0 20px;
+    }
+    .logo img{
+        height: 100px;
+        width: 120px;
+    }
+
+    .hero-section{
+        padding: 50px;
+    }
+    .hero-section h1{
+        font-size: 2.5rem;
+    }
+    .hero-section h3{
+        font-size: 1.8rem;
+    }
+    .hero-section p{
+        font-size: 1.5rem;
+    }
+    .form-area{
+        flex-direction: column;
+    }
+    .form-area input[type="text"] {
+        width: 300px;
+        height: 50px;
+        margin-bottom: 10px;
+    }
+    .form-area button{
+        height: 50px;
+        font-size: 1.5rem;
+    }
+
+    .container{
+        height: 100%;
+        flex-direction: column;
+    }
+
+    .left-content, .left-download-info, .right-kids-content{
+        width: 100%;
+        padding: 10px 40px;
+        text-align: center;
+    }
+    .left-content h2, .download-info h2, .right-kids-content h2{
+        font-size: 3rem;
+    }
+    .right-content{
+        width: 100%;
+    }
+    .right-content img{
+        width: 90%;
+    }
+    .right-content video{
+        width: 65%;
+    }
+
+    .download-info, .kids-content{
+        flex-direction: column-reverse;
+    }
+    .right-download-info, .right-kids-content{
+        width: 100%;
+        padding: 20px 40px;
+        text-align: center;
+    }
+    .left-kids-content{
+        width: 100%;
+        text-align: center;
+    }
+
+    .left-kids-content img{
+        width: 100%;
+    }
+    
+    .footer{
+        padding: 50px 40px;
+    }
+    .footer .column:nth-child(3), .column:nth-child(4){
+        display: none;
+    }
+    
+
+}
+/* Mobile Responsiveness */
